@@ -10,19 +10,23 @@ namespace hw06
     {
         static void Main()
         {
-            int val;
-            Console.WriteLine("in put a number you want to check evven of odd");
-            val = int.Parse(Console.ReadLine());
-            check(ref val);
-            Console.WriteLine(val);
-            Console.ReadLine();
-        }
-        static void check(ref int i)
+            check();
+            Console.WriteLine();
+                  Console.WriteLine();
+         }
+
+        static void check()
         {
-            if (i % 2 == 0)
-            {
-                Console.WriteLine("even");
-            }
+            Console.WriteLine("input \"a\" base:");
+            double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("input \"b\" base:");
+            double b = double.Parse(Console.ReadLine());
+            Console.WriteLine("input \"h\" base:");
+            double h = double.Parse(Console.ReadLine());
+            double area = ((a + b) / 2) * h;
+            Console.WriteLine("The area of your trapezoid is: {0}", area);
+
         }
     }
 }
+
